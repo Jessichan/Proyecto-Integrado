@@ -15,12 +15,12 @@
 <body>
     <form method="post">
         <fieldset>
-            <legend><h3>Compra</h3></legend>
+            <legend><h3>Nueva Compra</h3></legend>
             <span>Idcliente:</span><input type="integer" name="idcliente" maxlength="5" required><br>
             <span>Idaccesorio:</span><input type="integer" name="idaccesorio" maxlength="5" required><br>
             <span>Cantidad:</span><input type="integer" name="cantidad" maxlength="5" required><br>
             <span>Preciototal:</span><input type="decimal" name="preciototal" maxlength="4,2" required><br>
-            <span><input id= "enviar" type="submit" value="Enviar"></span><br>
+            <span><input id= "agregar" type="submit" value="Agregar"></span><br>
             <span><input id="volver" type="button" onclick=" location.href='/php/proyecto/adcompra.php' " value="Volver" style=cursor:pointer; name="boton" />
             </span>
         </fieldset>
@@ -37,7 +37,7 @@
             header('Location: /php/proyecto/login.php');
         }
 
-        //evitar que administrador acceda a paginas de usuario
+        //evitar que usuario user acceda a paginas de admin
         if(isset($_SESSION["iduser"])){
             if($_SESSION["tipouser"] != "Admin"){
               session_destroy();

@@ -15,13 +15,13 @@
 <body>
     <form method="post" enctype="multipart/form-data">
         <fieldset>
-            <legend><h3>Accesorio</h3></legend>
+            <legend><h3>Nuevo Accesorio</h3></legend>
             <span>Nombre:</span><input type="text" name="nombre" maxlength="25" required><br>
             <span>Descripcion:</span><input type="text" name="descrip" maxlength="500" required><br>
             <span>Cantidad:</span><input type="text" name="cantidad" maxlength="10" required><br>
             <span>Precio:</span><input type="decimal" name="precio" maxlength="4,2" required><br>
             <span>Imagen:</span><input type="file" name="image"><br>
-            <span><input id= "enviar" type="submit" value="Enviar"></span><br>
+            <span><input id= "agregar" type="submit" value="Agregar"></span><br>
             <span><input id="volver" type="button" onclick=" location.href='/php/proyecto/adaccesorio.php' " value="Volver" style=cursor:pointer; name="boton" />
             </span>
         </fieldset>
@@ -38,7 +38,7 @@
             header('Location: /php/proyecto/login.php');
         }
 
-        //evitar que administrador acceda a paginas de usuario
+        //evitar que usuario user acceda a paginas de admin
         if(isset($_SESSION["iduser"])){
             if($_SESSION["tipouser"] != "Admin"){
               session_destroy();

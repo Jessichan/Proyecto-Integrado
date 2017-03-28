@@ -20,7 +20,7 @@
             <span>Fecha:</span><input type="date" name="fecha" maxlength="50" required><br>
             <span>Idanimal:</span><input type="integer" name="idanimal" maxlength="5" required><br>
             <span>Cantidad:</span><input type="integer" name="cantidad" maxlength="10" required><br>
-            <span><input id= "enviar" type="submit" value="Enviar"></span><br>
+            <span><input id= "agregar" type="submit" value="Agregar"></span><br>
             <span><input id="volver" type="button" onclick=" location.href='/php/proyecto/adtienealquiler.php' " value="Volver" style=cursor:pointer; name="boton" />
             </span>
         </fieldset>
@@ -37,7 +37,7 @@
             header('Location: /php/proyecto/login.php');
         }
 
-        //evitar que administrador acceda a paginas de usuario
+        //evitar que usuario user acceda a paginas de admin
         if(isset($_SESSION["iduser"])){
             if($_SESSION["tipouser"] != "Admin"){
               session_destroy();
@@ -61,7 +61,7 @@
                 if($result)
                     $alquilerID = $connection->insert_id;
                 else
-                    echo "Error al insertar a la tabla alquiler"
+                    echo "Error al insertar a la tabla alquiler";
             }else
                 echo "Query Error";
         }

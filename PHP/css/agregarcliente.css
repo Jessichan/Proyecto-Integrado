@@ -4,10 +4,10 @@ body{
 	display: flex;
 }
 
-#enviar{
+#agregar{
 	position: relative;
-	left: 190px;
-	top: 10px;
+	left: 186px;
+	top: 11px;
 	border-radius: 6px;
  	background: #c9f;
  	padding: 5px 15px;

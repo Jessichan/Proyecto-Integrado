@@ -15,7 +15,7 @@
 <body>
     <form method="post" enctype="multipart/form-data">
         <fieldset>
-            <legend><h3>Animal</h3></legend>
+            <legend><h3>Nuevo Animal</h3></legend>
             <span>Especie:</span><input type="text" name="especie" maxlength="20" required><br>
             <span>Nombre:</span><input type="text" name="nombre" maxlength="25" required><br>
             <span>Raza:</span><input type="text" name="raza" maxlength="50" required><br>
@@ -24,7 +24,7 @@
             <span>Precio:</span><input type="decimal" name="precio" maxlength="5,2" required><br>
             <span>Imagen:</span><input type="file" name="image"><br>
             <span>
-                <input id= "enviar" type="submit" value="Enviar">
+                <input id= "agregar" type="submit" value="Agregar">
             </span><br>
             <span>
                 <input id="volver" type="button" onclick=" location.href='/php/proyecto/adanimal.php' " value="Volver" style=cursor:pointer; name="boton" />
@@ -43,7 +43,7 @@
             header('Location: /php/proyecto/login.php');
         }
 
-        //evitar que administrador acceda a paginas de usuario
+        //evitar que usuario user acceda a paginas de admin
         if(isset($_SESSION["iduser"])){
             if($_SESSION["tipouser"] != "Admin"){
                 session_destroy();

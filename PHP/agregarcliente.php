@@ -15,7 +15,7 @@
 <body>
     <form method="post">
         <fieldset>
-            <legend><h3>Cliente</h3></legend>
+            <legend><h3>Nuevo Cliente</h3></legend>
             <span>Nombre:</span><input type="text" name="nombre" maxlength="25" required><br>
             <span>Apellidos:</span><input type="text" name="ape" maxlength="50" required><br>
             <span>Telefono:</span><input type="tel" name="tel" pattern="[0-9]{9}" required><br>
@@ -26,7 +26,7 @@
                                     <option>User</option>
                                 </select required><br>
             <span>Pasword:</span><input type="text" name="pass" maxlength="50" required><br>
-            <span><input id= "enviar" type="submit" value="Enviar"></span><br>
+            <span><input id= "agregar" type="submit" value="Agregar"></span><br>
             <span><input id="volver" type="button" onclick=" location.href='/php/proyecto/adcliente.php' " value="Volver" style=cursor:pointer; name="boton" />
             </span>
         </fieldset>
@@ -43,7 +43,7 @@
             header('Location: /php/proyecto/login.php');
         }
 
-        //evitar que administrador acceda a paginas de usuario
+        //evitar que usuario user acceda a paginas de admin
         if(isset($_SESSION["iduser"])){
             if($_SESSION["tipouser"] != "Admin"){
               session_destroy();

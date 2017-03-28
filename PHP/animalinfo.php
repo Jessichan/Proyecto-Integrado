@@ -84,6 +84,9 @@
         if(isset($_POST['alquiler'])){
             $alquilerCorrecto = true;
 
+            $alquilerID = 0;
+            $animalID = $_GET['id'];
+
             // 1. Insertar en tabla Alquiler
             $fecha = date('Y-m-d');
             $insertar = "INSERT INTO alquiler
@@ -96,23 +99,24 @@
                     echo "Error al alquilar animal (insertar en tabla alquiler).";
                     $alquilerCorrecto = false;
                 }
-            }else
-                echo "Consulta errónea";
+            }else{
+                echo "Consulta errónea 1";
+                $alquilerCorrecto = false;
+            }
 
             // 2. Insertar en la tabla 'tiene'
-            $insertar2 = "INSERT INTO tiene
-                          VALUES ({$_GET['id']}, $alquilerID, 1);
-                         ";
-            if ($result = $connection->query($insertar2)) {
+            $meter = "INSERT INTO tiene VALUES($alquilerID, $animalID, 1);";
+            if ($result = $connection->query($meter)) {
                 if (!$result){
                     echo "Error al alquilar animal (insertar en tabla tiene).";
                     $alquilerCorrecto = false;
                 }
-            }else
-                echo "Consulta errónea";
+            }else{
+                echo "Consulta errónea 2";
+                $alquilerCorrecto = false;
+            }
 
             if($alquilerCorrecto){
-
                 echo "<div id=ya>";
                 echo "¡Gracias por alquilar en Animal Shop!. Podrá recoger y pagar este alquiler en nuestra tienda.";
                 echo "</div>";
