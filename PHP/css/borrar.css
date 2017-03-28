@@ -1,0 +1,17 @@
+body{
+  background: #e4e0ea;
+	width: 100%;
+	display: flex;
+}
+
+input {
+	position: relative;
+	left: 10px;
+	top: 12px;
+	height: 30px;
+	border-radius: 6px;
+  background: #c9f;
+  padding: 5px 10px;
+  border: none;
+  color: #666;
+}

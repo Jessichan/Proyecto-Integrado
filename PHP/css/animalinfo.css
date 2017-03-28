@@ -1,0 +1,139 @@
+#caja{
+	width: 750px;
+	margin: 50px auto;
+	background: #b91515;
+	padding: 15px;
+	border-radius: 20px;
+	margin-top: 50px;
+	margin-left: 270px;
+  display: flex;
+	flex-flow: row wrap;
+	height: 390px;
+}
+
+body{
+	background: #c63a3a;
+	width: 95%;
+    color: #e9d4d4;
+}
+
+#saludo{
+
+    margin-left: 569px;
+    margin-top: -207px;
+}
+
+img{
+	width: 290px;
+	height: 200px;
+}
+
+input[type=submit] {
+	margin-left: 660px;
+	background: #e94330;
+	color: #efedf0;
+	border-radius: 8px;
+	border: none;
+	margin-top: -5px;
+	cursor:pointer;
+	height: 22px;
+}
+
+#volver {
+	margin-left: 845px;
+	margin-top: -113px;
+	height: 35px;
+	width: 65px;
+	position: absolute;
+	text-align: center;
+	border-radius: 8px;
+	border: none;
+	background: #e94330;
+	color: #efedf0;
+}
+
+#foto{
+  width: 290px;
+  height: 200px;
+	position: absolute;
+	margin: 0px 20px;
+
+}
+
+#nombre{
+	position: absolute;
+	width: 75px;
+	height: 50px;
+	margin: 320px;
+	margin-top: -10px;
+}
+
+#raza{
+	width: 120px;
+	height: 50px;
+	margin: 320px;
+	position: absolute;
+	margin-top: 50px;
+
+}
+
+#edad{
+	width: 75px;
+	height: 50px;
+	margin: 320px;
+	position: absolute;
+	margin-top: 100px;
+}
+
+#descripcion{
+	width: 350px;
+	height: 99x;
+	position: absolute;
+	margin-top: 220px;
+	margin-left: 20px;
+}
+
+#precio{
+	text-align: center;
+	color: #d8b0b0;
+	width: 150px;
+	/*! height: 57px; */
+	border-radius: 12px;
+	position: absolute;
+  margin-left: 490px;
+	margin-top: 220px;
+	padding: 0px 20px;
+}
+#precio h1{
+	background: #b6364899;
+	padding: 5px;
+	border-radius: 6px;
+}
+
+#boton{
+	margin-left: 650px;
+	margin-top: 250px;
+	height: 25px;
+	width: 59px;
+	text-align: center;
+	background: #cb7d8b;
+
+}
+
+#alquiler{
+	margin-left: 935px;
+	margin-top: -114px;
+	height: 35px;
+	width: 65px;
+	position: absolute;
+	text-align: center;
+	border-radius: 8px;
+	border: none;
+	background: #e94330;
+	color: #efedf0;
+}
+
+#ya {
+	margin-left: 377px;
+	color: #e9d4d4;
+}

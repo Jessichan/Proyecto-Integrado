@@ -1,0 +1,135 @@
+#saludo{
+    margin-left: 904px;
+    margin-top: -21px;
+}
+
+input[type=submit] {
+	margin-left: 990px;
+	background-color: #C9F;
+   border-color: #866899;
+	margin-top: -5px;
+	cursor:pointer;
+	height: 22px;
+}
+
+body{
+	background: #e4e0ea;
+	display: flex;
+}
+
+#uno img:hover{
+	width: 250px;
+	height: 250px;
+	transition: 250ms;
+	background: #C9F;
+}
+
+#uno{
+	position: absolute;
+	height: 250px;
+	margin-left: 210px;
+	margin-top: 40px;
+	transition: 250ms;
+	background: #E4E0EA;
+
+}
+
+
+#dos img:hover{
+	width: 220px;
+	height: 230px;
+	padding: 15px;
+	transition: 250ms;
+	background: #C9F;
+}
+
+#dos{
+	position: absolute;
+	height: 260px;
+	margin-left: 519px;
+	margin-top: 37px;
+	transition: 250ms;
+	background: #E4E0EA;
+}
+
+#tres img:hover{
+	width: 225px;
+	height: 229px;
+	padding: 10px;
+	transition: 250ms;
+	background: #C9F;
+}
+
+#tres{
+	position: absolute;
+	height: 250px;
+	margin-left: 820px;
+	margin-top: 40px;
+	transition: 250ms;
+	background: #E4E0EA;
+}
+
+#cuatro img:hover{
+	width: 225px;
+	height: 229px;
+	padding: 15px;
+	transition: 250ms;
+	background: #C9F;
+}
+
+#cuatro{
+	position: absolute;
+	height: 250px;
+	margin-left: 390px;
+	margin-top: 350px;
+	transition: 250ms;
+	background: #E4E0EA;
+}
+
+#cinco img:hover{
+	width: 200px;
+	height: 200px;
+	padding: 15px;
+	transition: 250ms;
+	background: #C9F;
+}
+
+#cinco{
+	position: absolute;
+	height: 240px;
+	margin-left: 700px;
+	margin-top: 370px;
+	transition: 250ms;
+	background: #E4E0EA;
+}
+
+#cliente{
+	position: absolute;
+	margin-top: 268px;
+	margin-left: 300px
+}
+
+#animales{
+	position: absolute;
+	margin-top: 278px;
+	margin-left: 610px
+}
+
+
+#accesorios{
+	position: absolute;
+	margin-top: 269px;
+	margin-left: 909px
+}
+
+#tienealquiler{
+	position: absolute;
+	margin-top: 590px;
+	margin-left: 470px
+}
+
+#compra{
+	position: absolute;
+	margin-top: 578px;
+	margin-left: 785px
+}
