@@ -1,0 +1,41 @@
+body{
+	background: #c63a3a;
+	width: 95%;
+    color: #e9d4d4;
+}
+
+img{
+	margin-left: 85px;
+}
+
+#caja{
+	width: 350px;
+	/*! height: 200px; */
+	margin: 50px auto;
+	background: #b91515;
+	padding:25px;
+	border-radius: 20px;
+}
+label{
+	width: 150px;
+	display: inline-block;
+}
+form{
+	margin-top: 20px;
+
+}
+form div{
+	margin-top: 5px;
+}
+
+input[type=submit] {
+	margin-top: 20px;
+	background-color: #E94330;
+	border-color: firebrick;
+}
+
+#fin {
+     margin-left: 280px;
+	margin-top: -40px;
+	border-color: firebrick;
+}

@@ -68,7 +68,7 @@
             <span>Idcliente:</span><input name="idcliente" type="text" value="<?php echo $compraidcliente; ?>" maxlength="11" required><br>
             <span>Idaccesorio:</span><input name="idaccesorio" type="text" value="<?php echo $compraidaccesorio; ?>" maxlength="11" required><br>
             <span>Cantidad:</span><input name="cantidad" type="text" value="<?php echo  $compracantidad; ?>" required><br>
-            <span>Precio Total:</span><input name="preciototal" type="decimal" value="<?php echo  $compracantidad; ?>" maxlength="4,2" required><br>
+            <span>Precio Total:</span><input name="preciototal" type="decimal" value="<?php echo  $comprapreciototal; ?>" maxlength="4,2" required><br>
             <span><input id= "Modificar" type="submit" value="Modificar"></span><br>
             <span><input id="Volver" type="button" onclick=" location.href='/php/proyecto/adcompra.php' " value="Volver" style=cursor:pointer; name="boton" />
             </span>
