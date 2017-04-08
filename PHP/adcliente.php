@@ -12,6 +12,10 @@
 
        session_start();
 
+       file_exists("database.php") ? include_once "database.php" : header('Location: index.php');
+
+        connecBD(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+
         //no entrar en nada si no estas logueado
 
         if(!isset($_SESSION['iduser'])){
@@ -20,7 +24,7 @@
 
         if(isset($_POST["desloguear"])){
             session_destroy();
-            header('Location: /php/proyecto/login.php');
+            header('Location: /php/proyecto/index.php');
         }
 
 

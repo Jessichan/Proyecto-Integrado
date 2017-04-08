@@ -8,6 +8,11 @@
 <body>
 	<?php
         include_once "conec.php";
+
+        file_exists("database.php") ? include_once "database.php" : header('Location: index.php');
+
+        connecBD(DB_HOST, DB_USER, DB_PASS, DB_NAME);
+
         session_start();
 
         //si no estas logueado redirecciona a login
@@ -18,7 +23,7 @@
 
         if(isset($_POST["desloguear"])){
             session_destroy();
-            header('Location: /php/proyecto/login.php');
+            header('Location: /php/proyecto/index.php');
         }
 
         //evitar que administrador acceda a paginas de usuario

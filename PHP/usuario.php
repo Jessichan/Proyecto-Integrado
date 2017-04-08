@@ -13,7 +13,7 @@
         //si presionas desconectar, te lleva al login
         if(isset($_POST["desloguear"])){
             session_destroy();
-            header('Location: /php/proyecto/login.php');
+            header('Location: /php/proyecto/index.php');
         }
 
         //evita que usuario admin acceda a paginas de usuario
