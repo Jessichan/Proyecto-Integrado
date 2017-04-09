@@ -7,16 +7,7 @@
 	<?php
         $connection;
 
-		// //CREATING THE CONNECTION
-  //       // $connection = new mysqli("localhost", "mascota", "minino", "animalshop");
-  //       $connection = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME);
-  //       $connection->set_charset("utf8");
-  //       //TESTING IF THE CONNECTION WAS RIGHT
-  //       if ($connection->connect_errno) {
-  //       	printf("Connection failed: %s\n", $connection->connect_error);
-  //        	exit();
-  //       }
-
+        //variable global donde guarda el resultado de la funcion
         function connecBD($host, $user, $password, $database){
             global $connection;
 
@@ -35,7 +26,52 @@
                 return "true";
         }
 
+        function changeTheme(){
 
+            if(isset($_SESSION["temaUsuario"])){
+                if($_SESSION["temaUsuario"] == "Rojo"){
+                  echo "<script>
+                      window.onload = function(){
+                        var element = document.getElementById('color1');
+                        if(element != undefined)
+                          element.setAttribute('checked', 'checked');
+                        document.getElementsByTagName('body')[0].style.background = '#c63a3a';
+                      };
+                      </script>";
+                }
+                else if($_SESSION["temaUsuario"] == "Negro"){
+                  echo "<script>
+                      window.onload = function(){
+                        var element = document.getElementById('color2');
+                        if(element != undefined)
+                          element.setAttribute('checked', 'checked');
+
+                        document.getElementsByTagName('body')[0].style.background = '#620909';
+                      };
+                      </script>";
+                }else if($_SESSION["temaUsuario"] == "Rosa"){
+                  echo "<script>
+                      window.onload = function(){
+                        var element = document.getElementById('color3');
+                        if(element != undefined)
+                          element.setAttribute('checked', 'checked');
+
+                        document.getElementsByTagName('body')[0].style.background = '#e4e0ea';
+                      };
+                      </script>";
+                }
+            }else{
+                // Si estoy en el login, se aplique por defecto el tema 'Rojo'
+                echo "<script>
+                      window.onload = function(){
+                        var element = document.getElementById('color1');
+                        if(element != undefined)
+                          element.setAttribute('checked', 'checked');
+                        document.getElementsByTagName('body')[0].style.background = '#c63a3a';
+                      };
+                      </script>";
+            }
+        }
  	?>
 </body>
 </html>

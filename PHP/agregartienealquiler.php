@@ -35,6 +35,8 @@
 
         session_start();
 
+        changeTheme();
+
         //si no estas logueado redirecciona a login
         $nombreusu = "";
         if(!isset($_SESSION['iduser'])){

@@ -5,6 +5,8 @@
 </head>
 <body>
     <?php
+
+
         //Si no estas logueado ve a login
         if(!isset($_SESSION['iduser'])){
             header('Location: /php/proyecto/login.php');

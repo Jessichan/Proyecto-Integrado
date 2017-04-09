@@ -17,6 +17,8 @@
 
         session_start();
 
+        changeTheme();
+
         //no entrar en nada si no estas logueado
 
         if(!isset($_SESSION['iduser'])){

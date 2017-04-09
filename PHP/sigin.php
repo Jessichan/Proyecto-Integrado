@@ -9,6 +9,10 @@
     <?php
         include_once "conec.php";
 
+        session_start();
+
+        changeTheme();
+
         file_exists("database.php") ? include_once "database.php" : header('Location: index.php');
 
         connecBD(DB_HOST, DB_USER, DB_PASS, DB_NAME);

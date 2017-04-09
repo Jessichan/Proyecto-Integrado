@@ -17,6 +17,11 @@ body{
 	display: flex;
 }
 
+#cambiar{
+	margin-left: 20px;
+	margin-top: -1px;
+}
+
 #uno img:hover{
 	width: 250px;
 	height: 250px;

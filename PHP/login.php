@@ -9,12 +9,15 @@
 
     <?php
         include_once "conec.php";
-        file_exists("database.php") ? include_once "database.php" : header('Location: index.php');
 
+        //Si el archivo database esta creado entonces incluye los datos sino ve al index
+        file_exists("database.php") ? include_once "database.php" : header('Location: index.php');
+        // pasamos las constantes
         connecBD(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 
         //Si el usuario esta logueado
         session_start();
+        changeTheme();
 
         //admin vaya a admin y user a menu
         if(isset($_SESSION['iduser'])){
@@ -44,8 +47,9 @@
                 $query->fetch();
 
                 if(isset($userID)){
-                    $_SESSION['iduser'] = $userID;
-                    $_SESSION['tipouser'] = $userTipo;
+                    $_SESSION['iduser']      = $userID;
+                    $_SESSION['tipouser']    = $userTipo;
+                    $_SESSION["temaUsuario"] = "Rojo";
 
                     if ($userTipo == "Admin")
                         header('Location: administracion.php');

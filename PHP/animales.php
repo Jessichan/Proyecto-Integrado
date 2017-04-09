@@ -15,6 +15,8 @@
 
 	    session_start();
 
+        changeTheme();
+
         if(!isset($_SESSION['iduser'])){
             header('Location: /php/proyecto/login.php');
         }
