@@ -39,3 +39,10 @@ input[type=submit] {
 	margin-top: -40px;
 	border-color: firebrick;
 }
+
+#completada{
+	position: absolute;
+	margin-top: 570px;
+	margin-left: 575px;
+	width: 150px;
+}

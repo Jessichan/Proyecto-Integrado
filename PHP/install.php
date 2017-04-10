@@ -41,14 +41,16 @@
                     insertarvalorCompra($connection);
                 }
 
-                // Create a file with the connection variables of the database
+                // creamos un archivo con la conexion y las variables de la db
                 $dataFile = "<?php\n\tconst DB_NAME = '$dbName';\n\tconst DB_USER = '$dbUser';\n\tconst DB_PASS = '$dbPass';\n\tconst DB_HOST = '$dbHost';\n?>";
 
                 $file = fopen("database.php", "w");
                 fwrite($file, $dataFile);
                 Fclose($file);
 
+                echo "<div id=completada>";
                 echo "Instalacion completada";
+                echo "</div>";
             }
         }
         if (isset($_POST["botonFinalizar"])) {
@@ -76,7 +78,7 @@
 
             if ($result = $connection->query($insertarTabla)) {
                 if (!$result)
-                    echo "Impossible to insert the customer table";
+                    echo "Nos se han podido insertar datos en la tabla clientes";
             }else
                 echo "Wrong Query";
         }
@@ -95,7 +97,7 @@
 
             if ($result = $connection->query($insertarTabla)) {
                 if (!$result)
-                    echo "Impossible to insert the customer table";
+                    echo "No se han podido insertar datos en la tabla alquiler";
             }else
                 echo "Wrong Query";
         }
@@ -119,7 +121,7 @@
 
             if ($result = $connection->query($insertarTabla)) {
                 if (!$result)
-                    echo "Impossible to insert the customer table";
+                    echo "No se han podido insertar datos en la tabla animal";
             }else
                 echo "Wrong Query";
         }
@@ -139,7 +141,7 @@
 
             if ($result = $connection->query($insertarTabla)) {
                 if (!$result)
-                    echo "Impossible to insert the customer table";
+                    echo "No se han podido insertar datos en la tabla tiene";
             }else
                 echo "Wrong Query";
         }
@@ -160,7 +162,7 @@
 
             if ($result = $connection->query($insertarTabla)) {
                 if (!$result)
-                    echo "Impossible to insert the customer table";
+                    echo "No se han podido insertar datos en la tabla accesorio";
             }else
                 echo "Wrong Query";
         }
@@ -181,7 +183,7 @@
 
             if ($result = $connection->query($insertarTabla)) {
                 if (!$result)
-                    echo "Impossible to insert the customer table";
+                    echo "No se han podido insertar datos en la tabla compra";
             }else
                 echo "Wrong Query";
         }
@@ -452,7 +454,10 @@ function insertarvalorCompra($connection){
                 <input name="hostBD" type="text" value="localhost" required>
             </div>
             <div>
-                <input type="radio" name="insertarDatos" check>
+            <label>Insertar datos
+                <input type="checkbox" name="insertarDatos" checked>
+            </label>
+
             </div>
             <div>
                 <input type="submit" value="Instalar" name="botonInstalar" style=cursor:pointer;>
