@@ -85,6 +85,6 @@
 	<p id="tienealquiler">Tiene Alquiler</p>
 	<p id="compra">Compra</p>
 
-    <input id="cambiar" type="submit" onclick=" location.href='/php/proyecto/ajustes.php' " value="Cambiar Tema" style=cursor:pointer;/>
+    <input id="cambiar" type="submit" onclick=" location.href='/php/proyecto/adajustes.php' " value="Cambiar Tema" style=cursor:pointer;/>
 </body>
 </html>

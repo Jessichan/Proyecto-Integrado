@@ -49,14 +49,44 @@
                         document.getElementsByTagName('body')[0].style.background = '#620909';
                       };
                       </script>";
-                }else if($_SESSION["temaUsuario"] == "Rosa"){
+                }else if($_SESSION["temaUsuario"] == "Amarillo"){
                   echo "<script>
                       window.onload = function(){
                         var element = document.getElementById('color3');
                         if(element != undefined)
                           element.setAttribute('checked', 'checked');
 
+                        document.getElementsByTagName('body')[0].style.background = '#efc228';
+                      };
+                      </script>";
+                }else if($_SESSION["temaUsuario"] == "Rosa"){
+                  echo "<script>
+                      window.onload = function(){
+                        var element = document.getElementById('color4');
+                        if(element != undefined)
+                          element.setAttribute('checked', 'checked');
+
                         document.getElementsByTagName('body')[0].style.background = '#e4e0ea';
+                      };
+                      </script>";
+                }else if($_SESSION["temaUsuario"] == "Violeta"){
+                  echo "<script>
+                      window.onload = function(){
+                        var element = document.getElementById('color5');
+                        if(element != undefined)
+                          element.setAttribute('checked', 'checked');
+
+                        document.getElementsByTagName('body')[0].style.background = '#bcaad8';
+                      };
+                      </script>";
+                }else if($_SESSION["temaUsuario"] == "Morado"){
+                  echo "<script>
+                      window.onload = function(){
+                        var element = document.getElementById('color6');
+                        if(element != undefined)
+                          element.setAttribute('checked', 'checked');
+
+                        document.getElementsByTagName('body')[0].style.background = '#783e77';
                       };
                       </script>";
                 }

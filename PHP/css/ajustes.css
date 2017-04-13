@@ -5,7 +5,7 @@ body{
 }
 
 #caja{
-	width: 300px;
+	width: 330px;
 	/*! height: 200px; */
 	margin: 50px auto;
 	background: #b91515;
@@ -24,7 +24,7 @@ body{
 
 #volver{
 	position: absolute;
-	margin-left: 260px;
+	margin-left: 286px;
 	margin-top: -32px;
 	border-radius: 8px;
 	border: none;

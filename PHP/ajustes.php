@@ -13,10 +13,9 @@
 		if(isset($_POST["theme"])){
 	    	if($_POST['cambiarcolor'] == "Rojo")      	$_SESSION["temaUsuario"] = "Rojo";
 	      	else if($_POST['cambiarcolor'] == "Negro")  $_SESSION["temaUsuario"] = "Negro";
-	      	else if($_POST['cambiarcolor'] == "Rosa")  	$_SESSION["temaUsuario"] = "Rosa";
+	      	else if($_POST['cambiarcolor'] == "Amarillo")  	$_SESSION["temaUsuario"] = "Amarillo";
 	    }
 	    changeTheme();
-
 
 	 ?>
 	<div id="caja">
@@ -29,7 +28,7 @@
                   <input id="color2" type="radio" name="cambiarcolor" value="Negro">Negro
                 </label>
                 <label>
-                  <input id="color3" type="radio" name="cambiarcolor" value="Rosa">Rosa
+                  <input id="color3" type="radio" name="cambiarcolor" value="Amarillo">Amarillo
                 </label>
                 <input id="cambiar" type='submit' name="theme" value="Cambiar">
             </form>
