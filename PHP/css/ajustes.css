@@ -32,3 +32,11 @@ body{
 	color: #efedf0;
 	height: 22px;
 }
+
+#botonpdf {
+	border-radius: 8px;
+	border: none;
+	background: #e94330;
+	color: #efedf0;
+	height: 22px;
+}

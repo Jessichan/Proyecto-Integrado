@@ -30,7 +30,7 @@
         <br>
         <input id="ani" type="button" onclick=" location.href='/php/proyecto/animales.php' " value="Animales" style=cursor:pointer; name="boton2" />
         <input  id="ac" type="button" onclick=" location.href='/php/proyecto/accesorios.php' " value="Accesorios" style=cursor:pointer; name="boton1" />
-        <input type="submit" onclick=" location.href='/php/proyecto/ajustes.php' " value="Cambiar Tema" style=cursor:pointer; name="boton3" />
+        <input type="submit" onclick=" location.href='/php/proyecto/ajustes.php' " value="Ajustes" style=cursor:pointer; name="boton3" />
     </div>
 </body>
 </html>
